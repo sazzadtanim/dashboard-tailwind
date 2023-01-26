@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navigation() {
 	return (
-		<div className='grid gap-32 text-white/60 bg-rong-500 z-50 h-screen'>
+		<div className='hidden gap-32 text-white/60 bg-rong-500 z-50 h-screen mx-auto lg:grid'>
 			{/* user details */}
 			<div className='flex flex-col justify-start'>
 				<div className='relative grid max-w-fit'>
@@ -15,33 +15,17 @@ export default function Navigation() {
 						4
 					</p>
 				</div>
-				<p className='text-3xl font-semibold capitalize '>
-					Tabassum
-				</p>
-				<p className='text-base lowercase text-white/60'>
-					tabassum@email.com
-				</p>
+				<p className='text-3xl font-semibold capitalize '>Tabassum</p>
+				<p className='text-base lowercase text-white/60'>tabassum@email.com</p>
 			</div>
 			{/* menus/ options */}
 			<div className='flex flex-col gap-8 text-2xl font-semibold capitalize text-white/50'>
-				<div className='cursor-pointer'>
-					dashboard
-				</div>
-				<div className='text-white cursor-pointer'>
-					expenses
-				</div>
-				<div className='cursor-pointer'>
-					wallets
-				</div>
-				<div className='cursor-pointer'>
-					summary
-				</div>
-				<div className='cursor-pointer'>
-					accounts
-				</div>
-				<div className='cursor-pointer'>
-					settings
-				</div>
+				<div className='cursor-pointer'>dashboard</div>
+				<div className='text-white cursor-pointer'>expenses</div>
+				<div className='cursor-pointer'>wallets</div>
+				<div className='cursor-pointer'>summary</div>
+				<div className='cursor-pointer'>accounts</div>
+				<div className='cursor-pointer'>settings</div>
 			</div>
 		</div>
 	)

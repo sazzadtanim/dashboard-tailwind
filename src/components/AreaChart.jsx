@@ -35,15 +35,7 @@ export const options = {
 	},
 }
 
-const labels = [
-	'January',
-	'February',
-	'March',
-	'April',
-	'May',
-	'June',
-	'July',
-]
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
 
 export const data = {
 	labels,
@@ -57,8 +49,7 @@ export const data = {
 				})
 			),
 			borderColor: 'rgb(255, 99, 132)',
-			backgroundColor:
-				'rgba(255, 99, 132, 0.5)',
+			backgroundColor: 'rgba(255, 99, 132, 0.5)',
 		},
 		{
 			label: 'Dataset 2',
@@ -69,17 +60,15 @@ export const data = {
 				})
 			),
 			borderColor: 'rgb(53, 162, 235)',
-			backgroundColor:
-				'rgba(53, 162, 235, 0.5)',
+			backgroundColor: 'rgba(53, 162, 235, 0.5)',
 		},
 	],
 }
 
 export default function App() {
 	return (
-		<Line
-			options={options}
-			data={data}
-		/>
+		<div className='bg-rong-400 max-w-screen-sm mx-auto'>
+			<Line options={options} data={data} />
+		</div>
 	)
 }

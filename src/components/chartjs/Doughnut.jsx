@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-	Chart as ChartJS,
-	ArcElement,
-	Tooltip,
-	Legend,
-} from 'chart.js'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
 
 export default function DoughnutChart() {
@@ -44,7 +39,7 @@ export default function DoughnutChart() {
 	}
 	ChartJS.register(ArcElement, Tooltip, Legend)
 	return (
-		<div className='w-80 h-80'>
+		<div className='w-60 h-60'>
 			<Doughnut data={data} />
 		</div>
 	)
